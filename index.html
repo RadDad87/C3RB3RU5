@@ -440,7 +440,22 @@
       .module-grid { grid-template-columns: 1fr; }
       .credits-grid { flex-direction: column; gap: 16px; }
     }
-  </style>
+  
+    .coming-soon-btn {
+      background: #1a1a2e !important;
+      color: #555 !important;
+      border: 1px dashed #333 !important;
+      cursor: not-allowed !important;
+      opacity: 0.6;
+      padding: 12px 24px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      border-radius: 6px;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    </style>
 </head>
 <body>
 
@@ -480,9 +495,7 @@
         <div class="desc">
           Original CiferTech board. ESP32-WROOM-32 with ILI9341 TFT, 1x NRF24L01, 1x CC1101 Sub-GHz, button navigation. Full 72-module suite across all 17 domains.
         </div>
-        <esp-web-install-button manifest="manifests/c3rb3ru5-v1.json">
-          <button slot="activate">INSTALL V1</button>
-        </esp-web-install-button>
+        <button class="coming-soon-btn" disabled>V1 — COMING SOON</button>
       </div>
 
       <div class="flash-card">
@@ -502,9 +515,7 @@
         <div class="desc">
           CiferTech's CYD (Cheap Yellow Display) build. ESP32 with 2.8" resistive touchscreen, SD card slot, RGB LED. CYD-specific pin mappings and touch controls.
         </div>
-        <esp-web-install-button manifest="manifests/c3rb3ru5-cyd.json">
-          <button slot="activate">INSTALL CYD</button>
-        </esp-web-install-button>
+        <button class="coming-soon-btn" disabled>CYD — COMING SOON</button>
       </div>
 
     </div>
